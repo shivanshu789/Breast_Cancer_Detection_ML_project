@@ -90,3 +90,66 @@ These features contribute most significantly to the model's prediction capabilit
 
 ## Project Structure
 
+prediction_model/
+├── data/
+│ └── data.csv
+├── artifacts/
+│ ├── X_train.csv
+│ ├── X_test.csv
+│ ├── y_train.csv
+│ └── y_test.csv
+├── models/
+│ └── adaboost_model.pkl
+├── Source/
+│ └── components/
+│ ├── Data_Ingestion.py
+│ ├── Data_Transformation.py
+│ ├── Model_Training.py
+│ └── Model_Evaluation.py
+├── README.md
+
+
+
+---
+
+## Running the Project
+
+To execute the pipeline, run the following scripts in order:
+
+```bash
+python Source/components/Data_Ingestion.py
+python Source/components/Data_Transformation.py
+python Source/components/Model_Training.py
+python Source/components/Model_Evaluation.py
+
+
+Requirements
+Python 3.x
+
+pandas
+
+scikit-learn
+
+matplotlib
+
+joblib
+
+Install required packages using:
+
+bash
+Copy
+Edit
+
+pip install -r requirements.txt
+
+
+Contribution to Breast Cancer Detection
+This machine learning solution supports early diagnosis by automating the classification of tumors based on diagnostic measurements. It enhances decision-making for medical professionals by reducing manual effort and improving accuracy. With the high performance of the AdaBoost model, it offers a reliable tool in the fight against breast cancer.
+
+
+---
+
+Let me know if you want:
+- A **PDF version**
+- A **GitHub-ready version** with license and contribution guidelines
+- Additional visuals or charts added to the README
